@@ -1,5 +1,13 @@
+:root {
+    --blue: #0081c7;
+    --dark-blue: #005b8f;
+    --gold: #ffcc00;
+    --white: #ffffff;
+}
+
 body {
-    background-color: #0081c7;
+    background-color: var(--blue);
+    color: var(--white)
     font-family: "Poppins", sans-serif;
 }
 
@@ -24,4 +32,39 @@ a {
 
 a:hover {
     color:orange
+}
+
+.warning{
+    background: #ffcc00;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+}
+
+header{
+    background: var(--dark-blue);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 48px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: 600;
+}
+
+nav a:hover{
+    color: var(--gold);
+}
+
+section {
+    margin: 60px auto;
+    width: 80%
 }
