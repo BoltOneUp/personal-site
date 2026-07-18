@@ -44,18 +44,22 @@ a:hover {
 
 header{
     background: var(--dark-blue);
-    display: flex;
-    align-items: center;
     padding: 20px 25px;
     position: sticky;
     top: 0;
     z-index: 1000;
 }
 
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
 nav a{
     color: white;
     text-decoration: none;
-    margin-left: 25px;
     font-weight: 600;
 }
 
