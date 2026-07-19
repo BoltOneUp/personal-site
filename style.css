@@ -113,3 +113,53 @@ section {
     margin: 10px 0;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
+
+.into-card {
+    width: 85%;
+    max-width: 1100px;
+    margin: 60px auto;
+
+    background: rgba(0, 91, 143, 0.75);
+    border: 2px solid rgba(255,255,255,.15);
+    backdrop-filter: blur(10px);
+
+    border-radius: 20px;
+    padding: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, -2);
+}
+
+intro-text {
+    flex: 1;
+}
+
+intro-text h2 {
+    margin-top: 0;
+    font-size: 42px;
+}
+
+intro-text p {
+    font-size: 20px;
+    line-height: 1.7;
+}
+
+intro-text img {
+    width: 200px;
+    border-radius: 16px;
+    display: block;
+}
+
+@media (max-width: 800px) {
+    .intro-card {
+        flex-direction: column;
+        text-align: center;
+    }
+    .intro-text img {
+        width: 220px;
+    }
+}
